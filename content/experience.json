@@ -1,29 +1,34 @@
 {
   "experience": [
     {
-      "title": "Math Olympiad Instructor",
-      "company": "Allameh Helli Highschool",
-      "time": "Sep 2016 - July 2020"
+      "title": "Research Intern",
+      "company": "Samsung",
+      "time": "Jul 2025 - Present",
+      "logo": "assets/logos/huawei.jpeg"
     },
     {
       "title": "Research Assistant",
       "company": "University of Toronto (TISL)",
-      "time": "Sep 2021 - May 2025"
+      "time": "Sep 2021 - May 2025",
+      "logo": "assets/logos/huawei.jpeg"
     },
     {
       "title": "Research Intern (MITACS)",
       "company": "Samsung",
-      "time": "Jul 2022 - Sep 2023"
+      "time": "Jul 2022 - Sep 2023",
+      "logo": "assets/logos/huawei.jpeg"
     },
     {
       "title": "Research Intern",
       "company": "Nvidia",
-      "time": "Sep 2023 - Nov 2024"
-    }, 
+      "time": "Sep 2023 - Nov 2024",
+      "logo": "assets/logos/huawei.jpeg"
+    },
     {
       "title": "Research Scientist",
       "company": "Snap Inc.",
-      "time": "Feb 2025 - Present"
+      "time": "Feb 2025 - Present",
+      "logo": "assets/logos/huawei.jpeg"
     }
   ]
 }

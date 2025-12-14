@@ -35,7 +35,7 @@ function displayPublications(papers) {
     const container = document.getElementById("publications-container");
     container.innerHTML = "";
     const fragment = document.createDocumentFragment();
-    
+
     papers.forEach((paper, index) => {
         const mediaBorderRadius = `border-radius: 1.5rem 0 0 1.5rem;`;
         const mediaBorderRadiusMobile = `
@@ -80,14 +80,14 @@ function displayPublications(papers) {
                         <h5 class="mb-1">${paper.title}</h5>
                         <p class="mb-0 small">${paper.authors.replace("Ashkan Mirzaei", "<strong>Ashkan Mirzaei</strong>")}</p>
                         ${paper.url
-                            ? `<div class="mt-3"><a href="${paper.url}" target="_blank" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i>Project Page</a></div>`
-                            : ""
-                        }
+                ? `<div class="mt-3"><a href="${paper.url}" target="_blank" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i>Project Page</a></div>`
+                : ""
+            }
                         ${paper.abstract
-                            ? `<div class="abstract-content" id="abstract-${index}"><p class="mt-2 small">${paper.abstract}</p></div>
+                ? `<div class="abstract-content" id="abstract-${index}"><p class="mt-2 small">${paper.abstract}</p></div>
                                <div class="text-center mt-2 abstract-toggle"><i class="fas fa-chevron-down text-gray-400 transition-transform duration-300"></i></div>`
-                            : ""
-                        }
+                : ""
+            }
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ function initLazyLoading() {
                     element.src = element.dataset.src;
                     element.load();
                     // Only autoplay videos that are in viewport
-                    element.play().catch(() => {});
+                    element.play().catch(() => { });
                     element.classList.remove('lazy-video');
                 }
                 observer.unobserve(element);
@@ -154,20 +154,32 @@ function displayExperience(experience) {
     const timeline = document.getElementById("timeline");
     timeline.innerHTML = "";
     const fragment = document.createDocumentFragment();
-    
+
     for (let i = experience.length - 1; i >= 0; i--) {
         const item = experience[i];
-        const div = document.createElement('div');
-        div.className = 'timeline-item';
+        const div = document.createElement("div");
+        div.className = "timeline-item";
+
+        const logoHtml = item.logo
+            ? `<img class="exp-logo" src="${item.logo}" alt="${item.company} logo" loading="lazy" />`
+            : "";
+
         div.innerHTML = `
-            <h4>${item.company}</h4>
-            <p>${item.title}</p>
-            <p class="time-range">${item.time}</p>
-        `;
+      <div class="timeline-item-inner">
+        ${logoHtml}
+        <div class="exp-text">
+          <h4>${item.company}</h4>
+          <p>${item.title}</p>
+          <p class="time-range">${item.time}</p>
+        </div>
+      </div>
+    `;
+
         fragment.insertBefore(div, fragment.firstChild);
     }
+
     timeline.appendChild(fragment);
-    
+
     requestAnimationFrame(() => {
         const container = document.querySelector(".timeline-container");
         if (container) {
@@ -175,4 +187,5 @@ function displayExperience(experience) {
         }
     });
 }
+
 
