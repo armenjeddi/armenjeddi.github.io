@@ -183,7 +183,7 @@ function displayExperience(experience) {
     requestAnimationFrame(() => {
         const container = document.querySelector(".timeline-container");
         if (container) {
-            container.scrollLeft = container.scrollWidth;
+            container.scrollRight = container.scrollWidth;
         }
     });
 }

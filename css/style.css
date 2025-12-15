@@ -484,13 +484,14 @@
         }
 
         .exp-logo {
-            width: 28px;
-            height: 28px;
+            width: 64px;
+            height: 64px;
             object-fit: contain;
-            flex: 0 0 28px;
+            flex: 0 0 64px;
         }
 
         .exp-text h4,
         .exp-text p {
             margin: 0;
         }
+        

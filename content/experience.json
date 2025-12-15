@@ -4,31 +4,55 @@
       "title": "Research Intern",
       "company": "Samsung",
       "time": "Jul 2025 - Present",
+      "logo": "assets/logos/samsung.jpg"
+    },
+    {
+      "title": "Graduate Researcher",
+      "company": "Vector Institute & UofT",
+      "time": "Sep 2024 - Present",
+      "logo": "assets/logos/vector.svg"
+    },
+    {
+      "title": "Founder In Residence",
+      "company": "Antler VC",
+      "time": "Mar 2024 - Jun 2024",
+      "logo": "assets/logos/antler.jpeg"
+    },
+    {
+      "title": "Co-Founder & Head of AI",
+      "company": "Zown",
+      "time": "Jun 2023 - Jan 2024",
+      "logo": "assets/logos/zown.jpeg"
+    },
+    {
+      "title": "Deep Learning Engineer",
+      "company": "Deeplite",
+      "time": "Jan 2022 - Jul 2023",
+      "logo": "assets/logos/deeplite.jpeg"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "MARZ VFX",
+      "time": "Nov 2021 - Dec 2021",
+      "logo": "assets/logos/marz.jpeg"
+    },
+    {
+      "title": "Machine Learning Engineer",
+      "company": "Huawei",
+      "time": "Sep 2020 - Oct 2021",
       "logo": "assets/logos/huawei.jpeg"
     },
     {
-      "title": "Research Assistant",
-      "company": "University of Toronto (TISL)",
-      "time": "Sep 2021 - May 2025",
-      "logo": "assets/logos/huawei.jpeg"
+      "title": "Co-Founder & CTO",
+      "company": "Bluefox Immigration",
+      "time": "May 2020 - Dec 2021",
+      "logo": "assets/logos/bluefox.png"
     },
     {
-      "title": "Research Intern (MITACS)",
-      "company": "Samsung",
-      "time": "Jul 2022 - Sep 2023",
-      "logo": "assets/logos/huawei.jpeg"
-    },
-    {
-      "title": "Research Intern",
-      "company": "Nvidia",
-      "time": "Sep 2023 - Nov 2024",
-      "logo": "assets/logos/huawei.jpeg"
-    },
-    {
-      "title": "Research Scientist",
-      "company": "Snap Inc.",
-      "time": "Feb 2025 - Present",
-      "logo": "assets/logos/huawei.jpeg"
+      "title": "Graduate Researcher",
+      "company": "University of Waterloo",
+      "time": "Jan 2019 - Aug 2020",
+      "logo": "assets/logos/waterloo.jpeg"
     }
   ]
 }
