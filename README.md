@@ -1,6 +1,6 @@
 # Academic personal website template
 
-Feel free to use this template for your own website, but please reference this repo (by Ashkan Mirzaei) in your page. 
+I borrowed the template from Ashkan Mirzaei, feel free to use it and please give credit to Ashkan.
 
 # Locally hosting the website for test
 
