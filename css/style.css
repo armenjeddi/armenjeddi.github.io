@@ -495,3 +495,12 @@
             margin: 0;
         }
         
+        .edu-logo {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            flex: 0 0 64px;
+            margin-top: 2px; /* tiny nudge so it aligns nicely with the h4 */
+          }
+          
+
