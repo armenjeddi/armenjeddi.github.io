@@ -1,12 +1,52 @@
 {
   "papers": [
     {
-      "title": "Track, Inpaint, Resplat: Subject-driven 3D and 4D Generation with Progressive Texture Infilling",
-      "authors": "Shuhong Zheng, Ashkan Mirzaei, Igor Gilitschenski",
-      "venue": "NeurIPS 2025",
-      "url": "https://zsh2000.github.io/track-inpaint-resplat.github.io/",
-      "abstract": "Current 3D/4D generation methods are usually optimized for photorealism, efficiency, and aesthetics. However, they often fail to preserve the semantic identity of the subject across different viewpoints. Adapting generation methods with one or few images of a specific subject (also known as Personalization or Subject-driven generation) allows generating visual content that align with the identity of the subject. However, personalized 3D/4D generation is still largely underexplored. In this work, we introduce TIRE (Track, Inpaint, REsplat), a novel method for subject-driven 3D/4D generation. It takes an initial 3D asset produced by an existing 3D generative model as input and uses video tracking to identify the regions that need to be modified. Then, we adopt a subject-driven 2D inpainting model for progressively infilling the identified regions. Finally, we resplat the modified 2D multi-view observations back to 3D while still maintaining consistency. Extensive experiments demonstrate that our approach significantly improves identity preservation in 3D/4D generation compared to state-of-the-art methods.",
-      "media": "assets/paper_media/tire_teaser.png"
+      "title": "Puzzle Curriculum GRPO for Vision-Centric Reasoning",
+      "authors": "Ahmadreza Jeddi*, Hakki Can Karaimer*, Hue Nguyen, Zhongling Wang, Ke Zhao, Javad Rajabi, Ran Zhang, Raghav Goyal, Babak Taati, Radek Grzeszczuk",
+      "venue": "Preprint - 2025",
+      "url": "https://pcgrpo.github.io/",
+      "abstract": "Recent reinforcement learning (RL) approaches like outcome-supervised GRPO have advanced chain-of-thought reasoning in Vision Language Models (VLMs), yet key issues linger: (i) reliance on costly and noisy hand-curated annotations or external verifiers; (ii) flat and sparse reward schemes in GRPO; and (iii) logical inconsistency between a chain's reasoning and its final answer. We present Puzzle Curriculum GRPO (PC-GRPO), a supervision-free recipe for RL with Verifiable Rewards (RLVR) that strengthens visual reasoning in VLMs without annotations or external verifiers. PC-GRPO replaces labels with three self-supervised puzzle environments: PatchFit, Rotation (with binary rewards) and Jigsaw (with graded partial credit mitigating reward sparsity). To counter flat rewards and vanishing group-relative advantages, we introduce a difficulty-aware curriculum that dynamically weights samples and peaks at medium difficulty. We further monitor Reasoning-Answer Consistency (RAC) during post-training: mirroring reports for vanilla GRPO in LLMs, RAC typically rises early then degrades; our curriculum delays this decline, and consistency-enforcing reward schemes further boost RAC. RAC correlates with downstream accuracy. Across diverse benchmarks and on Qwen-7B and Qwen-3B backbones, PC-GRPO improves reasoning quality, training stability, and end-task accuracy, offering a practical path to scalable, verifiable, and interpretable RL post-training for VLMs.",
+      "media": "assets/paper_media/pcgrpo.png"
+    },
+    {
+      "title": "Similarity-Aware Token Pruning: Your VLM but Faster",
+      "authors": "Ahmadreza Jeddi, Negin Baghbanzadeh, Elham Dolatabadi, Babak Taati",
+      "venue": "Preprint - 2025",
+      "url": "https://arxiv.org/abs/2503.11549",
+      "abstract": "The computational demands of Vision Transformers (ViTs) and Vision-Language Models (VLMs) remain a significant challenge due to the quadratic complexity of self-attention. While token pruning offers a promising solution, existing methods often introduce training overhead or fail to adapt dynamically across layers. We present SAINT, a training-free token pruning framework that leverages token similarity and a graph-based formulation to dynamically optimize pruning rates and redundancy thresholds. Through systematic analysis, we identify a universal three-stage token evolution process (aligner-explorer-aggregator) in transformers, enabling aggressive pruning in early stages without sacrificing critical information. For ViTs, SAINT doubles the throughput of ViT-H/14 at 224px with only 0.6% accuracy loss on ImageNet-1K, surpassing the closest competitor by 0.8%. For VLMs, we apply SAINT in three modes: ViT-only, LLM-only, and hybrid. SAINT reduces LLaVA-13B's tokens by 75%, achieving latency comparable to LLaVA-7B with less than 1% performance loss across benchmarks. Our work establishes a unified, practical framework for efficient inference in ViTs and VLMs.",
+      "media": "assets/paper_media/saint.png"
+    },
+    {
+      "title": "QGen: On the Ability to Generalize in Quantization Aware Training",
+      "authors": "MohammadHossein AskariHemmat, Ahmadreza Jeddi, Reyhane Askari Hemmat, Ivan Lazarevich, Alexander Hoffman, Sudhakar Sah, Ehsan Saboori, Yvon Savaria, Jean-Pierre David",
+      "venue": "2024",
+      "url": "https://arxiv.org/abs/2404.11769",
+      "abstract": "Quantization lowers memory usage, computational requirements, and latency by utilizing fewer bits to represent model weights and activations. In this work, we investigate the generalization properties of quantized neural networks, a characteristic that has received little attention despite its implications on model performance. In particular, first, we develop a theoretical model for quantization in neural networks and demonstrate how quantization functions as a form of regularization. Second, motivated by recent work connecting the sharpness of the loss landscape and generalization, we derive an approximate bound for the generalization of quantized models conditioned on the amount of quantization noise. We then validate our hypothesis by experimenting with over 2000 models trained on CIFAR-10, CIFAR-100, and ImageNet datasets on convolutional and transformer-based models.",
+      "media": "assets/paper_media/qgen.png"
+    },
+    {
+      "title": "A Simple Fine-tuning Is All You Need: Towards Robust Deep Learning Via Adversarial Fine-tuning",
+      "authors": "Ahmadreza Jeddi, Mohammad Javad Shafiee, Alexander Wong",
+      "venue": "CVPR AML-CV Workshop - 2021",
+      "url": "https://arxiv.org/abs/2012.13628",
+      "abstract": "Adversarial Training (AT) with Projected Gradient Descent (PGD) is an effective approach for improving the robustness of the deep neural networks. However, PGD AT has been shown to suffer from two main limitations: i) high computational cost, and ii) extreme overfitting during training that leads to reduction in model generalization. While the effect of factors such as model capacity and scale of training data on adversarial robustness have been extensively studied, little attention has been paid to the effect of a very important parameter in every network optimization on adversarial robustness: the learning rate. In particular, we hypothesize that effective learning rate scheduling during adversarial training can significantly reduce the overfitting issue, to a degree where one does not even need to adversarially train a model from scratch but can instead simply adversarially fine-tune a pre-trained model. Motivated by this hypothesis, we propose a simple yet very effective adversarial fine-tuning approach based on a  learning rate scheduling strategy which not only significantly decreases computational cost required, but also greatly improves the accuracy and robustness of a deep neural network. Experimental results show that the proposed adversarial fine-tuning approach outperforms the state-of-the-art methods on CIFAR-10, CIFAR-100 and ImageNet datasets in both test accuracy and the robustness, while reducing the computational cost by 8-10. Furthermore, a very important benefit of the proposed adversarial fine-tuning approach is that it enables the ability to improve the robustness of any pre-trained deep neural network without needing to train the model from scratch, which to the best of the authors' knowledge has not been previously demonstrated in research literature.",
+      "media": "assets/paper_media/aft.png"
+    },
+    {
+      "title": "Deep Neural Network Perception Models and Robust Autonomous Driving Systems: Practical Solutions for Mitigation and Improvement",
+      "authors": "Mohammad Javad Shafiee, Ahmadreza Jeddi, Amir Nazemi, Paul Fieguth, Alexander Wong",
+      "venue": "IEEE Signal Processing Magazine - 2020",
+      "url": "https://ieeexplore.ieee.org/abstract/document/9307303",
+      "abstract": "The National Highway Traffic Safety Administration reported that more than 90% of in-road accidents in 2015 occurred purely because of drivers? errors and misjudgments, with such factors as fatigue and other sorts of distractions being the main cause of these accident. One promising solution for reducing (or even resolving) such human errors is via autonomous or computer-assisted driving systems. Autonomous vehicles (AVs) are currently being designed with the aim of reducing fatalities in accidents by being insusceptible to typical driver errors. Moreover, in addition to improved safety, autonomous systems offer many other potential benefits to society: 1) improved fuel efficiency beyond that of human driving, making driving more cost beneficial and environmentally friendly, 2) reduced commute times due to improved driving behaviors and coordination among AVs, and 3) a better driving experience for individuals with disabilities, to name a few.",
+      "media": ""
+    },
+    {
+      "title": "Learn2Perturb: an End-to-end Feature Perturbation Learning to Improve Adversarial Robustness",
+      "authors": "Ahmadreza Jeddi, Mohammad Javad Shafiee, Michelle Karg, Christian Scharfenberger, Alexander Wong",
+      "venue": "CVPR - 2020",
+      "url": "https://arxiv.org/abs/2003.01090",
+      "abstract": "While deep neural networks have been achieving state-of-the-art performance across a wide variety of applications, their vulnerability to adversarial attacks limits their widespread deployment for safety-critical applications. Alongside other adversarial defense approaches being investigated, there has been a very recent interest in improving adversarial robustness in deep neural networks through the introduction of perturbations during the training process. However, such methods leverage fixed, pre-defined perturbations and require significant hyper-parameter tuning that makes them very difficult to leverage in a general fashion. In this study, we introduce Learn2Perturb, an end-to-end feature perturbation learning approach for improving the adversarial robustness of deep neural networks. More specifically, we introduce novel perturbation-injection modules that are incorporated at each layer to perturb the feature space and increase uncertainty in the network. This feature perturbation is performed at both the training and the inference stages. Furthermore, inspired by the Expectation-Maximization, an alternating back-propagation training algorithm is introduced to train the network and noise parameters consecutively. Experimental results on CIFAR-10 and CIFAR-100 datasets show that the proposed Learn2Perturb method can result in deep neural networks which are  more robust on  FGSM and PDG adversarial attacks and significantly outperforms the state-of-the-art against   attack and a wide range of well-known black-box attacks.",
+      "media": "assets/paper_media/l2p.png"
     }
   ]
 }

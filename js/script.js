@@ -78,7 +78,7 @@ function displayPublications(papers) {
                     <div class="publication-body p-4 w-100" style="border-radius:0 1.5rem 1.5rem 0;">
                         <span class="venue-badge">${paper.venue}</span>
                         <h5 class="mb-1">${paper.title}</h5>
-                        <p class="mb-0 small">${paper.authors.replace("Ashkan Mirzaei", "<strong>Ashkan Mirzaei</strong>")}</p>
+                        <p class="mb-0 small">${paper.authors.replace("Ahmadreza Jeddi", "<strong>Ahmadreza Jeddi</strong>")}</p>
                         ${paper.url
                 ? `<div class="mt-3"><a href="${paper.url}" target="_blank" class="project-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i>Project Page</a></div>`
                 : ""
