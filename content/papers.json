@@ -6,7 +6,7 @@
       "venue": "Preprint - 2026",
       "url": "",
       "abstract": "Modern Vision-Language Models (VLMs) benefit from chain-of-thought prompting and test-time scaling, but these gains often come with prohibitive inference cost due to large visual contexts and long decoding chains. We view this cost through two coupled axes: Visual Context Scaling (VCS), which controls how many visual tokens are retained after pruning or compression, and Visual Reasoning Scaling (VRS), which controls how much inference-time reasoning search is performed. Existing methods typically optimize one axis at a time, leaving the joint allocation of compute between visual evidence and reasoning search unexplored. We propose See Less Think More (SLTM), a lightweight policy that adapts both VCS and VRS per query. SLTM first applies Key Diversity Visual (KDV) pruning, a training-free O(N) key-diversity rule, to discard redundant visual tokens before prefilling. It then uses a learned difficulty predictor to select the number of self-consistency rollouts and reallocates the saved compute into additional reasoning search. SLTM is deployment-friendly and compatible with shared-prefill inference, where all rollouts reuse a single prefilling pass and KV cache. Across diverse image and video reasoning benchmarks, SLTM improves the accuracy--compute trade-off relative to VCS-only and VRS-only baselines, and remains beneficial on top of RL post-trained VLMs while keeping compute and latency low.",
-      "media": "assets/paper_media/sltm.PNG"
+      "media": "assets/paper_media/sltm.png"
     },
     {
       "title": "When Does RL Help Medical VLMs? Disentangling Vision, SFT, and RL Gains",
@@ -14,7 +14,7 @@
       "venue": "Preprint - 2026",
       "url": "https://medbridgerl.github.io/",
       "abstract": "Reinforcement learning (RL) is increasingly used to post-train medical Vision-Language Models (VLMs), yet it remains unclear whether RL improves medical visual reasoning or mainly sharpens behaviors already induced by supervised fine-tuning (SFT). We present a controlled study that disentangles these effects along three axes: vision, SFT, and RL. Using MedMNIST as a multi-modality testbed, we probe visual perception by benchmarking VLM vision towers against vision-only baselines, quantify reasoning support and sampling efficiency via Accuracy@1 versus Pass@K, and evaluate when RL closes the support gap and how gains transfer across modalities. We find that RL is most effective when the model already has non-trivial support (high Pass@K): it primarily sharpens the output distribution, improving Acc@1 and sampling efficiency, while SFT expands support and makes RL effective. Based on these findings, we propose a boundary-aware recipe and instantiate it by RL post-training an OctoMed-initialized model on a small, balanced subset of PMC multiple-choice VQA, achieving strong average performance across six medical VQA benchmarks.",
-      "media": "assets/paper_media/medbridgerl.PNG"
+      "media": "assets/paper_media/medbridgerl.png"
     },
     {
       "title": "LoopFormer: Elastic-Depth Looped Transformers for Latent Reasoning via Shortcut Modulation",
@@ -22,7 +22,7 @@
       "venue": "ICLR - 2026",
       "url": "https://loopformer.github.io/",
       "abstract": "Looped Transformers have emerged as an efficient and powerful class of models for reasoning in the language domain. Recent studies show that these models achieve strong performance on algorithmic and reasoning tasks, suggesting that looped architectures possess an inductive bias toward latent reasoning. However, prior approaches fix the number of loop iterations during training and inference, leaving open the question of whether these models can flexibly adapt their computational depth under variable compute budgets. We introduce LoopFormer, a looped Transformer trained on variable-length trajectories to enable budget-conditioned reasoning. Our core contribution is a shortcut-consistency training scheme that aligns trajectories of different lengths, ensuring that shorter loops yield informative representations while longer loops continue to refine them. LoopFormer conditions each loop on the current time and step size, enabling representations to evolve consistently across trajectories of varying length rather than drifting or stagnating. Empirically, LoopFormer demonstrates robust performance on language modeling and reasoning benchmarks even under aggressive compute constraints, while scaling gracefully with additional budget. These results show that looped Transformers are inherently suited for adaptive language modeling, opening a path toward controllable and budget-aware large language models.",
-      "media": "assets/paper_media/loopformer.PNG"
+      "media": "assets/paper_media/loopformer.png"
     },
     {
       "title": "PuzzleCraft: Exploration-Aware Curriculum Learning for Puzzle-Based RLVR in VLMs",
