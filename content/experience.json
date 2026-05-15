@@ -2,8 +2,14 @@
   "experience": [
     {
       "title": "Research Intern",
+      "company": "Waabi",
+      "time": "May 2026 - Present",
+      "logo": "assets/logos/waabi.jpg"
+    },
+    {
+      "title": "Research Intern",
       "company": "Samsung",
-      "time": "Jul 2025 - Present",
+      "time": "Jul 2025 - May 2026",
       "logo": "assets/logos/samsung.jpg"
     },
     {

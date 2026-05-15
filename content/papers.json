@@ -1,6 +1,14 @@
 {
   "papers": [
     {
+      "title": "GEAR: Genetic AutoResearch for Agentic Code Evolution",
+      "authors": "Ahmadreza Jeddi*, Minh Ngoc Le*, Hakki Can Karaimer, Konstantinos G. Derpanis, Babak Taati",
+      "venue": "Preprint - 2026",
+      "url": "https://genetic-autoresearch.github.io/",
+      "abstract": "Autonomous research agents can already run machine learning experiments without human supervision, but many rely on a narrow search strategy: they repeatedly modify one program and keep changes only when they improve the current best result. This can cause them to discard useful partial ideas, alternative promising directions, and insights from failed or incomplete experiments. GEAR, or Genetic AutoResearch, replaces this single-path search with a population-based search over multiple research states. It keeps a set of strong candidate solutions, selects parents based on productivity, novelty, and coverage, and explores new ideas through mutation and crossover. Each research state stores its code changes, reflections, and performance data, allowing future decisions to build on past discoveries. The paper studies three versions of GEAR: one controlled through prompting, one using a fixed programmatic search controller, and one where the controller itself can evolve during the run. Under the same compute budget and environment, all three versions outperform the AutoResearch baseline. More importantly, while the baseline tends to settle into one local optimum, GEAR continues finding improvements over longer runs. Overall, the results suggest that autonomous research agents become more effective when they maintain multiple promising directions and can adapt their search strategy over time.",
+      "media": "assets/paper_media/gear.png"
+    },
+    {
       "title": "See Less, Think More: Adaptive Test-Time Scaling for Vision–Language Models",
       "authors": "Ahmadreza Jeddi*, Minh Ngoc Le*, Amirhossein Kazerouni*, Hakki Can Karaimer, Hue Nguyen, Iqbal Mohomed, Michael Brudno, Konstantinos G. Derpanis, Alex Levinshtein, Babak Taati, Radek Grzeszczuk",
       "venue": "Preprint - 2026",
